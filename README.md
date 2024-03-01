@@ -11,3 +11,24 @@
 # パッケージ
 以下のファイルに、このアプリケーションで使用されるパッケージの一覧が記載されています。
 - [installed_packages.md](./installed_packages.md)
+
+# exe化の方法
+このアプリケーションをexeファイルに変換する方法について説明します。
+
+## pyinstallerでexe化
+1. コマンドプロンプトやターミナルを開きます。
+2. 以下のコマンドを入力して、PyInstallerをインストールします。
+
+    ```
+    pip install pyinstaller
+    ```
+
+3. PyInstallerが正常にインストールされたら、Pythonスクリプトをexeファイルに変換します。次のコマンドを使用します。
+
+    ```
+    pyinstaller --onefile your_script_name.py
+    ```
+
+    `your_script_name.py`はGUIアプリケーションのPythonスクリプトのファイル名に置き換えてください。
+
+4. これにより、distディレクトリ内にexeファイルが生成されます。exeファイルを実行すると、アプリケーションが起動します。
