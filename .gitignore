@@ -1,0 +1,3 @@
+# PyInstallerの生成物を無視する
+/dist/
+/build/
